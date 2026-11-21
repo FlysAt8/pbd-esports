@@ -37,7 +37,7 @@ docker compose up -d
 
 ### 2. Проверка загрузки ленивых связей через join fetch (GET)
 * **URL:** `http://localhost:8080/api/teams/1/players`
-* **Ожидание:** Вернётся JSON команды со списком игроков. Благодаря `JOIN FETCH` в `TeamRepository`, мы избежали `LazyInitializationException`.
+* **Ожидание:** Вернётся JSON команды со списком игроков.
 
 ### 3. Проверка транзакции и записи в БД (POST)
 * **URL:** `http://localhost:8080/api/applications?teamId=1&tournamentId=2`
